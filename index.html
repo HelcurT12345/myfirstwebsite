@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <title>My First Website</title>
+</head>
+<body>
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <svg xmlns="data:image/jpeg;base64,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" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span class="ml-3 text-xl">HelcurT</span>
+          </a>
+          <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+            <a href="/"class="mr-5 hover:text-gray-900">Home</a>
+            <a href="/"class="mr-5 hover:text-gray-900">About</a>
+            <a href="/"class="mr-5 hover:text-gray-900">Country</a>
+            <a href="/"class="mr-5 hover:text-gray-900">Followers</a>
+          </nav>
+        </div>
+      </header>
+
+
+
+      <section class="text-gray-600 body-font">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+          <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Hello Guys 
+              <br class="hidden lg:inline-block">Welcome to my Website 
+            </h1>
+            <p class="mb-8 leading-relaxed">This is my first Website... Made by HelcurT</p>
+            <div class="flex justify-center">
+            </div>
+          </div>
+          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+            <img class="object-cover object-center rounded" alt="hero" src="https://source.unsplash.com/720x600/?coding,computer">
+          </div>
+        </div>
+      </section>      
+
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto flex flex-wrap">
+          <div class="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
+            <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            </div>
+            <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 title-font font-medium text-sm">1</div>
+            <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+              <div class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Step 1</h2>
+                <p class="leading-relaxed">Go to your PLaystore or Appstore,</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+            <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            </div>
+            <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 title-font font-medium text-sm">2</div>
+            <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+              <div class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                </svg>
+              </div>
+              <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Step 2</h2>
+                <p class="leading-relaxed">Search Instagram and download it.</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+            <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            </div>
+            <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 title-font font-medium text-sm">3</div>
+            <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+              <div class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
+                  <circle cx="12" cy="5" r="3"></circle>
+                  <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>
+                </svg>
+              </div>
+              <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Step 3</h2>
+                <p class="leading-relaxed">Sign up And search @helcurt_1968.</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex relative pb-10 sm:items-center md:w-2/3 mx-auto">
+            <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            </div>
+            <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 title-font font-medium text-sm">4</div>
+            <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+              <div class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
+                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+              <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Step 4</h2>
+                <p class="leading-relaxed">Follow!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+</body>
+</html>
